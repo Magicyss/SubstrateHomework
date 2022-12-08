@@ -30,21 +30,21 @@ fn test_empty_list() {
 
 #[test]
 fn test_int_list() {
-    let mut empty_list: Vec<i32> = vec![31, 25, 9, 6, 3, 5, 11, 4, 77, 32, 7];
-    bubble_sort::bubble_sort(&mut empty_list);
-    assert_eq!(empty_list, vec![3, 4, 5, 6, 7, 9, 11, 25, 31, 32, 77]);
+    let mut int_list: Vec<i32> = vec![31, 25, 9, 6, 3, 5, 11, 4, 77, 32, 7];
+    bubble_sort::bubble_sort(&mut int_list);
+    assert_eq!(int_list, vec![3, 4, 5, 6, 7, 9, 11, 25, 31, 32, 77]);
 }
 
 #[test]
 fn test_char_list() {
-    let mut empty_list= vec!['a', 'e', 'v', 'b', 'w', '5', '6', '4', '2', 'h', 'i'];
-    bubble_sort::bubble_sort(&mut empty_list);
-    assert_eq!(empty_list, vec!['2', '4', '5', '6', 'a', 'b', 'e', 'h', 'i', 'v', 'w']);
+    let mut char_list= vec!['a', 'e', 'v', 'b', 'w', '5', '6', '4', '2', 'h', 'i'];
+    bubble_sort::bubble_sort(&mut char_list);
+    assert_eq!(char_list, vec!['2', '4', '5', '6', 'a', 'b', 'e', 'h', 'i', 'v', 'w']);
 }
 
 #[test]
 fn test_string_list() {
-    let mut empty_list= vec!["Test", "Test1", "Run", "Apple", "Zoo", "Pen", "Substrate", "Visual", "Web3", "Studio", "Rust"];
-    bubble_sort::bubble_sort(&mut empty_list);
-    assert_eq!(empty_list, vec!["Apple", "Pen", "Run", "Rust", "Studio", "Substrate", "Test", "Test1", "Visual", "Web3", "Zoo"]);
+    let mut string_list= vec!["Test", "Test1", "Run", "Apple", "Zoo", "Pen", "Substrate", "Visual", "Web3", "Studio", "Rust"];
+    bubble_sort::bubble_sort(&mut string_list);
+    assert_eq!(string_list, vec!["Apple", "Pen", "Run", "Rust", "Studio", "Substrate", "Test", "Test1", "Visual", "Web3", "Zoo"]);
 }
