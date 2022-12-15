@@ -1,4 +1,7 @@
 mod bubble_sort;
+mod traffic_light;
+mod sum;
+mod area;
 use bubble_sort::bubble_sort::bubble_sort;
 
 fn main() {
